@@ -10,7 +10,7 @@ class User {
   public $nickName;
   public $dataNascita;
 
-  public function __construct ($nome, $cognome, $nickName, $dataNascita) {
+  public function __construct ($nome, $cognome, $nickName, $dataNascita ) {
 
     $this nome -> $nome;
     $this cognome -> $cognome;
