@@ -10,22 +10,28 @@ class User {
   public $nickName;
   public $dataNascita;
 
-  public function __construct ($nome, $cognome, $nickName, $dataNascita ) {
+  public function __construct($nome, $cognome, $nickName, $dataNascita) {
 
-    $this nome -> $nome;
-    $this cognome -> $cognome;
-    $this nickName -> $nickName;
-    $this dataNascita -> $dataNascita;
+    $this -> nome = $nome;
+    $this -> cognome = $cognome;
+    $this -> nickName = $nickName;
+    $this -> dataNascita = $dataNascita;
   }
 
   public function __toString() {
     return "Utente" .'<br>'
-    . "nome" . $this -> nome;
+    . "nome: " . $this -> nome . '<br>'
+    . "cognome: " . $this -> cognome . '<br>'
+    . "nickname: " . $this -> nickName . '<br>'
+    . "data di nascita: " . $this -> dataNascita . '<br>'. '<br>';
   }
+
 }
 
 $user1 = new User('Andrea','Miranda','ND','18/09/92');
+$user2 = new User('Giangianni','Lo vedo','guapo','04/12/98');
+$user3 = new User('Luigio','Pandemonio','er mole','06/04/87');
 
-echo $user1;
+echo $user1 . $user2 . $user3;
 
  ?>
